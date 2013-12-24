@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mantz Music Online Mixing</title>
+
+<link rel="stylesheet" type="text/css" href="mantzmusicstyle.css"/>
+
+</head>
+
+<body>
+
+<table width="900" align="center">
+
+<!--Header Bar-->
+	<tr style="background-color:#111;">
+		<td width="410" valign="middle">	
+			<img src="images/MMLogo.jpg" alt="Mantz Music Logo" width="400" height="80" align="left"/>
+		</td>
+        <td colspan="2">
+        	&nbsp;&nbsp;&nbsp;
+          <a href="home.html">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="onlinemixing.html">Online Mixing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="recording.html">Recording&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="clients.html">Clients&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="contact.html">Contact&nbsp;&nbsp;&nbsp;</a>
+        </td>
+	</tr>
+<!--End Header Bar-->
+
+<!--Begin Main Content-->
+    <tr>
+        <td colspan="2"><h1>Online Mixing</h1>
+        </td>
+   	</tr>
+    <!--Image Row-->
+	<tr>
+        <td colspan="2">
+			<p><img src="images/OLMixingIcon.jpg" width="427" height="267" alt="Pro Tools Screenshot" />
+            <img src="images/ConsoleCloseUp.jpg" width="400" height="267" alt="East West Neve Console Close Up" /> </p>
+       	</td>
+   	</tr>
+    <!--End Image Row-->
+    
+    <!--Begin Online Mixing Description-->
+    <tr>
+        <td colspan="2">
+            <p>Have your songs mixed by a professional mix engineer without ever having to leave your home. The process is simple. Fill out the short form below and I will then email you payment information and instructions on how to send your sessions to me. As I finish your songs, I will send you a reference mix for your review. After reviewing the reference mix you then either approve the mix, or notify me of any revisions you want (as many times as reasonably necessary).</p>
+            <p>Your satisfaction is guaranteed! If you are not satisfied with the results, you will receive a full refund.</p>
+            <p>Feel free to <a href="contact.html">contact me</a> if you have any questions.</p>
+		</td>          
+  	</tr>
+    <!--End Online Mixing Description-->
+    
+    <!--Begin File Preparation Guidelines-->
+    <tr>
+       	<td style="padding-right: 10px">
+            <p style="text-align:center"><strong>File Prep Guidelines</strong></p>
+            <p>The following file preparations must be properly completed in order for me to mix your songs, so please follow them or I will have to ask you to resubmit your files.</p>
+            <ul>
+            	<li>All files must be audio files (either .wav or .aif). MIDI files must be bounced/rendered to audio files. There is very little chance that I have the exact same MIDI set up as you, so this is necessary to get the actual sound you intended.</li><br/>
+            <li>Editing must be completed before submitting for mixdown. Make sure the arrangement is correct and all tracks are clean (meaning free of clipping and unwanted distortion). Editing/arranging is available as a seperate sevice. If it is determined that a significant amount of editing is required before mixdown you will be given the option of having me do the edits at $50 per hour, or edit the material yourself and resubmit the song.</li><br />
+            <li>Each audio file will become a seperate track, so all audio files need to start at 0:00:00 on the timeline and be continuous through the end of the song. (If you send your song in a Pro Tool session you can skip this step)</li><br />
+            <li>Dry audio files (no effects) are highly recommended to allow more flexibility with effects. Remember there is no way for an engineer to remove an effect if it is already printed to the track. If you have a track with a "must-have" effect, send both wet and dry versions of the track.</li><br />
+			<li>Name all audio files with meaningful names such as kick, snare, lead vocal, etc. File names like audio1, audio2, etc. does not tell anything about what is contained in the file. This will cause a delay while I try to figure out what is on each track.</li><br />
+            <li>Create a folder with the name of the song and export your audio files to this folder. Be sure only to include files to be heard in the final mix, no alternate takes. If you are sending a Pro Tools session, be sure to send the entire project folder and not just the session file. The session file does not contain any of the actual audio!</li><br />
+            </ul>
+            <p style="text-align:center;">That's it! Now you are ready to upload your music.</p>
+    	</td>
+    <!--End File Preparation Guidelines-->
+    
+    <!--Begin Payment Options-->
+    	<td style="vertical-align:top; padding: 10px; background-color:#222;">
+        	<p><strong>The price for Online Mixing is $250 per song or $2300 for a 10 or more song album up to 80 minutes of music.</strong></p>
+            <p><em>Additional mix options are available including vocal-up, vocal-down, acapella, music only, stems, and "clean" version for $25 each per song.</em></p>
+        	<br /><br />
+	<!--Online Mixing Form Goes Here-->
+    	<table align="center">
+        	<tr><td colspan="2"><form action="/webformmailer.php" method="post" style="text-align:center;"><br />
+        	<input type="text" name="name" placeholder="Name" size="50"/><br /><br />
+            <input type="text" name="email" placeholder="Email" size="50" /><br /><br />
+            <input type="text" name="numOfSongs" placeholder="Number of Songs" size="50" /><br />
+            <tr><td style="text-align:left;">
+            <p><strong>Add-ons</strong></p>
+            <input type="checkbox" name="addons" value="vocalUP"/>Vocal Up<br />
+            <input type="checkbox" name="addons" value="vocalDn"/>Vocal Down<br />
+            <input type="checkbox" name="addons" value="acapella"/>Acapella<br />
+            <input type="checkbox" name="addons" value="musicOnly"/>Music Only<br />
+            <input type="checkbox" name="addons" value="stems"/>Stems<br />
+            <input type="checkbox" name="addons" value="clean"/>Clean Version<br />
+            </td>
+            <td>
+			<br />
+            <textarea name="comments" rows="7" cols="25" placeholder="Questions/Comments" ></textarea>
+            </td>
+            </tr>
+			<tr>
+			<td colspan="2" style="text-align:center;">
+				<br />
+				<input type="reset" value="reset"/>
+				<input type="submit" value="submit"/>
+			</td>
+			</tr>
+        </form>
+        </table>
+    <!--End Online Mixing Form-->
+    <br />
+	<!-- PayPal Logo -->
+        <table border="0" cellpadding="10" cellspacing="0" align="center">
+        	<tr>
+            	<td align="center">
+                </td>
+           	</tr>
+            <tr>
+            	<td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark"></a>
+                </td>
+           	</tr>
+     	</table>
+ 	<!-- End PayPal Logo -->
+
+        </td>
+    <!--End Payment Options-->
+  	</tr>
+<!--End Main Content-->
+    
+ <!--Begin Footer-->
+    <tr>
+    	<td colspan="3" style="background-color: black;">
+        <p style="text-align:center">&copy;&nbsp;Anthony Mantz 2013 909-261-0416</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
