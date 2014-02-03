@@ -2,26 +2,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Mantz Music Recording and Engineering Services</title>
+<title>Mantz Music - Contact Us</title>
 <link href="mmstyles.css" rel="stylesheet" type="text/css" />
+<link href="formval.js" type="text/javascript" />
 </head>
 
 <body>
   <div id="pagewrap">
 	<header>
-    	<!--New logo and banner image will go into CSS-->
-    	<h1>Home</h1>
+    	<h1>Contact Us</h1>
    	</header>
     <nav>
     	<ul>
         	<li><a href="index.html">Home</a></li>
         	<li><a href="recording.html">Recording</a></li>
             <li><a href="mixing.html">Online Mixing</a></li>
-            <li><a href="clients.html">Clients</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
        	</ul>
   	</nav>
+    <div class="contactForm">
+    <h2>Contact Us</h2>
+    <h4>Please use the form below to contact us or call <strong>(909) 261-0416</strong>.</h4>
+    <form name="contactUs" action="contactThankYou.html" onsubmit="return valContactForm()" method="post">
+    Name<input type="text" name="name" size="50"/>
+    Email<input type="email" name="email" size="50" />
+    Subject<input type="text" name="subject" size="50" />
+    Message<textarea name="message" cols="50" rows="12"></textarea>
+    <input type="reset" value="Clear" />
+    <input type="submit" value="Submit" />
+    </form>
+    </div>
     <footer>
     	<p>&copy;&nbsp;Anthony Mantz 2013</p>
    	</footer>

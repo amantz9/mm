@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mantz Music - 2 Track Recording Quote</title>
+<link href="mmstyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="index">
+  <div id="pagewrap">
+	<header>
+    	<h1>Quote</h1>
+   	</header>
+    <nav>
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="recording.html">Recording</a></li>
+            <li><a href="mixing.html">Online Mixing</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+       	</ul>
+  	</nav>
+    <div class="quoteform">
+    <h2>Two-track Recording Quote Form</h2>
+        <form action="quoteThankYou.html" method="post" name="twoTrkQuote">
+            Artist Name  <input name="artistName" type="text" size="50" maxlength="200" /><br />
+            Contact Name  <input name="contactName" type="text" size="50" maxlength="200" /><br />
+            Email Address  <input name="email" type="text" size="50" maxlength="200" /><br />
+            Phone Number  <input name="phone" type="text" size="50" maxlength="50" /><br />
+            <p>Recording Date  <input name="date" type="text" size="20" maxlength="20" value="mm/dd/yyyy" /><br />
+            Downbeat Time  <input name="time" type="text" size="20" maxlength="20" value="00:00 pm"/></p>
+            Venue Name  <input name="venue" type="text" size="50" maxlength="200" /><br />
+            Venue Address  <input name="venueaddress" type="text" size="50" maxlength="250" /><br />
+            <p>Is this a recording session or recording of a live performance?<br />
+            <input name="session" type="radio" value="session" />Recording Session<br />
+            <input name="session" type="radio" value="concert" />Live Performance</p>
+            <p>What is the estimated length of the session/concert?<br />
+			<input name="duration" type="text" size="20" maxlength="50" /></p>
+            <p>Describe any spot mics needed or any other special requirements:
+            <textarea name="special" cols="50" rows="6"></textarea></p>
+            <input type="reset" value="Clear" />
+		    <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+/*This sets the layout for the recording page*/
+
+.recMain2t {
+	width: 49%;
+	float: left;
+	border-right: 1px solid #CCC;
+	padding-bottom: 10px;
+}
+
+.recMain2t p {
+	padding: 5px 20px 5px 30px;
+}
+
+.recMainMt {
+	width: 49%;
+	float: right;
+}
+
+.recMainMt p {
+	padding: 5px 30px 5px 20px;
+}
+
+.recMainEng {
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	background: rgba(230,230,230,.4);
+	border-top: 1px solid #CCC;
+}
+
+h3 {
+	text-align: center;
+}
+
+.recMainEng p {
+	padding-right: 40px;
+}
+
+#picleft {
+	float: left;
+	margin: 0 50px 20px 80px;
+}
+

@@ -1,62 +1,86 @@
 @charset "UTF-8";
-/* CSS Document */
+/**************************************
+	 CSS for mantzmusic.com
+	Copyright 2014 - Anthony Mantz
+***************************************/
 
-/*Clear Styles*/
+/**************************************
+	Set default Styles
+***************************************/
 body {
 	margin: 0;
 	border: none;
 	padding: 0;
 	font-family:Arial, Helvetica, sans-serif;
 }
-
-header, nav, section, footer, article {     /* leave this alone */
+header, nav, section, footer {
 	display: block;
 }
-
-
-/*New Styles*/
+/**************************************
+	Foundation Positioning
+***************************************/
 body {
 	background: #000 ;
 }
-
 #pagewrap {
-	width: 80%;
+	width: 75%;
+	max-width: 1000px;
 	background: #EEE url(images/consolebg.jpg) fixed bottom center no-repeat;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 }
-
+.main1 {
+	width: 50%;
+	float: left;
+	padding: 20px 30px 20px 30px;
+}
+.main1fullwide {
+	padding: 20px 20px 20px 20px;
+}
+.main2 {
+	padding: 20px 30px 20px 30px;
+}
+/**************************************
+	Header
+***************************************/
 header {
-	background: #000 url(images/MMLogo.jpg) no-repeat 0 0;
-	height: 100px;
+	background: #000 url(images/mmlogo20131226.jpg) no-repeat 20px -10px;
+	height: 175px;
 	text-align: right;
 	color: white;
+	position: relative;
+	margin-top: -20px;
+	padding-bottom: 20px;
 }
-
+header h1 {
+	font-size: 4em;
+	padding: 80px 100px 0 0;
+}
+/**************************************
+	Navigation
+***************************************/
 nav {
-	width: 100%;
+	width: 100% -6px;
 	height: 40px;
-	float: left;
-	margin-right: 1px;
-	background-color: #222;
+	background-color: #CCC;
+	border: 3px ridge #AAA;
+	position: relative;
 }
-
 nav ul {
-	margin: 5px 10px 15px 10px;
+	margin: 5px auto 15px 40px;
 	padding-left: 20px;
 	list-style: none;
 	line-height: 2em;
 }
-
 nav li {
 	float: left;
-	margin-right: 10px;
+	margin-right: 20px;
 }
-
-nav a {
+nav a, .button a {
 	display: block;
 	text-align: center;
+	font-variant: small-caps;
 	width: 150px;
 	line-height: 1.7em;
 	margin-bottom: 6px;
@@ -64,31 +88,40 @@ nav a {
 	padding-bottom: 4px;
 	font-size: .9em;
 }
-
-nav a:link {
+nav a:link, .button a:link {
 	color: white;
 	text-decoration: none;
 	background: #222 url(images/buttonUp.jpg) no-repeat;
 }
-
-nav a:visited {
+nav a:visited, .button a:visited {
 	color: white;
 	text-decoration: none;
 	background: #222 url(images/buttonUp.jpg) no-repeat;
 }
-
-nav a:hover {
+nav a:hover, .button a:hover {
 	color: white;
 	text-decoration: none;
 	background: #222 url(images/buttonUp.jpg) no-repeat;
+	box-shadow: #F00 0px 0px 0px 3px;
 }
-
-nav a:active {
+nav a:active, .button a:active {
 	color: white;
 	text-decoration: none;
 	background: #222 url(images/buttonDown.jpg) no-repeat;
 }
-
+.button {
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 175px;
+	background-color: #CCC;
+	border: 3px ridge #AAA;
+}
+.button a {
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
 /*Example Only --- Remove after completing nav styles
 #homepage #homelink {font-variant: small-caps; box-shadow: #FFF 1px 1px 1px 1px; cursor: default;}
 #servicespage #serviceslink {font-variant: small-caps; box-shadow: #FFF 1px 1px 1px 1px; cursor: default;}
@@ -97,21 +130,90 @@ nav a:active {
 #faqpage #faqlink {font-variant: small-caps; box-shadow: #FFF 1px 1px 1px 1px; cursor: default;}
 #eventspage #eventslink {font-variant: small-caps; box-shadow: #FFF 1px 1px 1px 1px; cursor: default;}*/
 
-.main1 {
-	width: 50%;
-	float: left;
+/**************************************
+	Text and Sectional Styles
+***************************************/
+p {
+	text-indent: 1em;
 }
-
-.main2 {
+.emphasis {
+	font-size: 1.3em;
 }
-
-.main2 .promo {
+.intro {
+	font-size: 1.1em;
+	padding: 10px 15px 10px 15px;
+}
+.promo {
 	background-color:rgba(255,255,204,.5);
 	padding: 12px;
 	overflow: hidden;
 	clear: right;
+	border: 1px solid rgba(225,225,225,.9);
+	border-radius: 50px;
 }
-
+.thankyou {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+/**************************************
+	Image Styles
+***************************************/
+.intro .regPic img {
+	float: left;
+	margin-right: 30px;
+}
+.regPic img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: ridge 4px black;
+	box-shadow: #333 -2px 5px 3px;
+}
+/**************************************
+	Forms
+***************************************/
+.contactForm {
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 30%;
+	margin-right: auto;
+	margin-bottom: 20px;
+	line-height: 2em;
+}
+.contactForm h4 {
+	margin-right: -100px;
+}
+.contactForm strong {
+	font-size: 1.4em;
+}
+.quoteform {
+	width: 500px;
+	text-align: right;
+	margin: 20px 33% 20px auto;
+	line-height: 2em;
+	padding-bottom: 20px;
+}
+.quoteform p {
+	text-indent: 0;
+}
+/**************************************
+	Lists
+***************************************/
+.recentProj a {
+	color: inherit;
+}
+.recentProj ul li {
+	list-style:none;
+}
+.recentProj ul ul li {
+	list-style: none;
+	text-indent: 1.5em;
+	font-style: italic;
+}
+/**************************************
+	Footer
+***************************************/
 footer {
 	font-size: .9em;
 	background-color: #CCC;
