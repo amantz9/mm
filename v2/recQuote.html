@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Mantz Music - 2 Track Recording Quote</title>
+<title>Mantz Music - Recording Quote</title>
 <link href="mmstyles.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body id="index">
+<body>
   <div id="pagewrap">
 	<header>
     	<h1>Quote</h1>
@@ -21,8 +21,8 @@
        	</ul>
   	</nav>
     <div class="quoteform">
-    <h2>Two-track Recording Quote Form</h2>
-        <form action="quoteThankYou.html" method="post" name="twoTrkQuote">
+    <h2>Recording Quote Form</h2>
+        <form action="quoteThankYou.html" method="post" name="recQuote">
             Artist Name  <input name="artistName" type="text" size="50" maxlength="200" /><br />
             Contact Name  <input name="contactName" type="text" size="50" maxlength="200" /><br />
             Email Address  <input name="email" type="text" size="50" maxlength="200" /><br />
@@ -32,16 +32,25 @@
             Venue Name  <input name="venue" type="text" size="50" maxlength="200" /><br />
             Venue Address  <input name="venueaddress" type="text" size="50" maxlength="250" /><br />
             <p>Is this a recording session or recording of a live performance?<br />
-            <input name="session" type="radio" value="session" />Recording Session<br />
+            <input name="session" type="radio" value="session" />Recording Session&nbsp;&nbsp;
             <input name="session" type="radio" value="concert" />Live Performance</p>
-            <p>What is the estimated length of the session/concert?<br />
+            <p>What is the estimated hours of the session/concert?<br />
 			<input name="duration" type="text" size="20" maxlength="50" /></p>
-            <p>Describe any spot mics needed or any other special requirements:
-            <textarea name="special" cols="50" rows="6"></textarea></p>
+            <p>Will this recording require more than two microphones?<br />
+            <input name="overtwo" type="radio" value="two" />No&nbsp;&nbsp;
+            <input name="overtwo" type="radio" value="more" />Yes</p>
+            <p>If yes, describe in detail your microphone/input requirements:
+            <textarea name="mics" cols="55" rows="6"></textarea></p>
             <input type="reset" value="Clear" />
 		    <input type="submit" value="Submit" />
             </div>
         </form>
-    </div>
+    <footer>
+    	<p>&copy;&nbsp;Mantz Music 2013-2014</p>
+        <p>(909) 261-0416</p>
+        <p>Website created by Anthony Mantz</p>
+   	</footer>
+  </div>
+
 </body>
 </html>

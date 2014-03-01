@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mantz Music - Online Mixing Quote</title>
+<link href="mmstyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="pagewrap">
+	<header>
+    	<h1>Quote</h1>
+   	</header>
+    <nav>
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="recording.html">Recording</a></li>
+            <li><a href="mixing.html">Online Mixing</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+       	</ul>
+  	</nav>
+    <div class="quoteform">
+    <h2>Mixing/Mastering Quote Form</h2>
+        <form action="quoteThankYou.html" method="post" name="olmixquote">
+            Artist Name  <input name="artistName" type="text" size="50" maxlength="200" /><br />
+            Contact Name  <input name="contactName" type="text" size="50" maxlength="200" /><br />
+            Email Address  <input name="email" type="text" size="50" maxlength="200" /><br />
+            <p>Total Number of Songs <input name="numsongs" type="text" size="20" maxlength="20" /><br />
+            Total Duration of Audio <input name="duration" type="text" size="20" maxlength="20" value="00:00" /><br />
+            <p>Do you want your songs...<br />
+            <input name="service" type="radio" value="mixed" />Mixed&nbsp;&nbsp;
+            <input name="service" type="radio" value="mastered" />Mastered&nbsp;&nbsp;
+            <input name="service" type="radio" value="both" />Both</p>
+            Typical Track Count* <select name="tracks" >
+            	<option value="" selected>Select</option>
+            	<option value="2-24">2-24</option>
+                <option value="25-48">25-48</option>
+                <option value="49-72">49-72</option>
+                <option value="72+">72+</option>
+                <option value="mastering">2 (Mastering Only)</option>
+                </select>
+            <div class="footnote"><p>*Select 2 (Mastering Only) for a mastering quote with no mixing.</p></div>
+            <div class="promo"><p><input name="freepromo" type="checkbox" />Check here for the free one-song test drive.</p>
+            	<div class="footnote"><p>This offer is good for a single song under 6 minutes to be mixed and mastered free of charge. The artist agrees to allow a portion of the finished song to be posted on mantzmusic.com. Limit one free test drive per artist.</p></div></div>
+            <p>Please describe your project including any creative direction on how you want the songs to sound. You may also ask any questions here.<br />
+            <textarea name="special" cols="60" rows="10"></textarea></p>
+            <input type="reset" value="Clear" />
+		    <input type="submit" value="Submit" />
+            </div>
+        </form>
+    <footer>
+    	<p>&copy;&nbsp;Mantz Music 2013-2014</p>
+        <p>(909) 261-0416</p>
+        <p>Website created by Anthony Mantz</p>
+   	</footer>
+  </div>
+</body>
+</html>
