@@ -99,6 +99,20 @@ body {
 .posts ul:last-child {
 	line-height: 3.5em;
 }
+#projects .posts ul:last-child {
+	line-height: 1.5em;
+}
+#projects .posts ul li {
+	float: left;
+	width: 75%;
+}
+#projects .posts ul ul li {
+	float: right;
+	margin: 15px 50px 15px 20px;
+}
+.clear {
+	clear: both;
+}
 .featured {
 	height: 500px;
 }
