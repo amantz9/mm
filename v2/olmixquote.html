@@ -22,7 +22,8 @@
   	</nav>
     <div class="quoteform">
     <h2>Mixing/Mastering Quote Form</h2>
-        <form action="quoteThankYou.html" method="post" name="olmixquote">
+            <form action="webformmailer.php" method="post" name="olmixquote">
+            <input type="hidden" name="redirect" value="quoteThankYou.html" />
             Artist Name  <input name="artistName" type="text" size="50" maxlength="200" /><br />
             Contact Name  <input name="contactName" type="text" size="50" maxlength="200" /><br />
             Email Address  <input name="email" type="text" size="50" maxlength="200" /><br />

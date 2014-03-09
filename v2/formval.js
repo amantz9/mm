@@ -14,6 +14,6 @@ function validateName(formName, fieldName){
 	}
 }
 
-function valContactForm(){
+function validateForm(){
 	
 }
